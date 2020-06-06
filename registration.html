@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="Register for our site to get products.">
+        <link rel="stylesheet" href="cssPages/register.css">
+        <script>
+              function check(event)
+              {
+                  if(document.getElementById("user").value.length>3)
+                  {
+                      event.target.submit();
+                  }
+                  else
+                  {
+                      event.preventDefault();
+                      document.getElementById("user").focus();
+                  }
+  
+              }
+  
+              function clearTxt(txt)
+              {
+                  if(txt.value=="Enter your name")
+                      txt.value="";
+              }
+              
+              function changeColor(sender)
+              {
+                     sender.style.border="solid 1px blue";
+              }
+          </script>
+    </head>
+    
+    
+    <body>
+        <fieldset class="field">
+        <legend class="fieldlegend">Registeration</legend>
+        <form action="Thankyou.html" method="get">
+            
+            
+                    <!-- Here goes form fields and HTML -->
+            <input type="hidden" name="id_cust"  value=“”>
+           
+            <div class="star ">
+                     <label for="Fname">FirstName:</label>  
+                     <input type="text"
+                            name="Fname" 
+                            placeholder="Enter Your first Name"
+                            id="Fname" 
+                            required
+                            size="25"  
+                            maxlength="20"                        
+                            accesskey="a"  
+                            >
+                     <div class="divInvalid require format">
+                        A series of alphabetical characters.
+                     </div>
+            </div>
+            
+            
+            
+            <div class="star ">
+                      <label for="Lname">LastName:</label>  
+                      <input type="text" 
+                             name=":Lname" 
+                             id="Lname" 
+                             placeholder="Enter Your Last Name" 
+                             tabindex="3" required="required" 
+                             size="25"                                  
+                             maxlength="20" >  
+                     <div class="divInvalid require format">
+                        A series of alphabetical characters.
+                     </div>
+            </div> 
+            
+            
+            
+            <div class="star ">
+                    <label for="Email">Email:</label>  
+                    <input type="email" 
+                           name="Email" 
+                           id="Email" 
+                           placeholder="Enter Your Email" 
+                           tabindex="2"
+                           required="required"
+                           size="25"                              
+                           maxlength="50" >   
+                     <div class="divInvalid require format">
+                        Like a--@gmail.com
+                     </div>
+            </div>   
+            
+            
+            <div class="star require">
+                    <label for="password">Password:</label>  
+                    <input type="password"
+                           id="password" 
+                           name="password" 
+                           placeholder="Enter Your password" 
+                           required="required" size="25"                                
+                           maxlength="20" > 
+            </div>      
+            
+            
+            
+              
+            <div class="star require"> 
+                    <label for="password">Repeat Password:</label>  
+                    <input type="password" 
+                           id="password" 
+                           name="password" 
+                           placeholder="Enter Your password" 
+                           required="required" size="25"                             
+                           maxlength="20" >
+            </div>                
+            
+         
+            <div class="star"> 
+                    <label for="date">Birth Date :</label>
+                    <input type="date" 
+                           id="date"
+                           name="BirthDate "> 
+            
+            </div>
+            
+            <div class="star"> 
+             <label>User Picture:</label>
+                     <input type="file"
+                            name="html5multiplefileupload"
+                            multiple="">
+
+            </div>
+            
+            
+            <div class="feildGroup"> 
+            <fieldset  style=" width:89%;">
+                     <legend>Gender</legend>
+                     <input type="radio" 
+                            name="jender" 
+                            id="jender" 
+                            value="male" 
+                            size="25">
+                     <label for="jender" style="width:30px;height:20px;">Male:</label> 
+                     <input type="radio" 
+                            name="jender" 
+                            id="jender1" 
+                            value="famale" 
+                            size="25">
+                     <label for="jender1">Female:</label> 
+           </fieldset>
+            </div>
+             
+    
+             <textarea cols="46" 
+                       id="about" 
+                       rows="5" 
+                       class="teArea"
+                       name="about"> Leave Message
+            </textarea>
+           
+            
+             <div class="margeleft">
+               <input type="checkbox" name="option1" value="1" id="agree"> <label class="btnLabel"for="agree">Agree</label>
+               <span style="background-color: rgb(199, 225, 226);border-radius: 5px;">
+                   <a href="#" style="text-decoration: none;color: whitesmoke;">Read me</a>
+               </span>  
+            </div>
+            
+            <div class="margeleft">
+            <input type="submit" class="btn" value="Send !">
+            <input type="reset"  class="btn" value="CLEAR!">
+            </div>
+            
+       </form>
+         </fieldset>
+        
+        
+        
+    </body>
+</html>
+
+
+

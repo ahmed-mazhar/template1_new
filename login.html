@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+     
+	 <head>
+            <meta charset="utf-8">
+            <meta name="description" content="Our Login Page"/>
+            <link rel="stylesheet" href="cssPages/login.css">
+		     
+           <title>login</title>
+	</head>
+
+	<body>
+	
+	
+		<form method="post" name="f1" action="homePage.html">
+		<fieldset class="field">
+		<legend class="addLegend">Log In</legend>
+		<table>
+			
+			<tr>
+				  <td>
+				        <label for="nm" >User Name:</label>
+				  </td>
+				  
+				  <td>
+				        <input id="nm" 
+                               name="user" 
+                               type="text" 
+                               size="25" 
+                               maxlength=20
+                               placeholder="Enter your User name here!" 
+                               required="required"
+                               tabindex="1"
+                               />
+                         
+		         </td>
+		   </tr>
+				
+		   <tr>
+				<td>
+				        <label for="psd">PassWord: </label>
+				</td>
+				
+				<td>
+				        <input id="psd" 
+                               name="pswd" 
+                               type="Password" 
+                               size="25" 
+                               placeholder="Enter your User password here!" 
+                               required="required"
+                               tabindex="3" 
+                               >
+				</td>
+		   </tr>
+			
+			
+	       <tr>
+			    <td>
+					    <label for="country">Select ur location: </label>
+				</td>
+				
+				<td>
+				        <select name="country" id="country" class="set">
+						
+				        	<optgroup label="Africa">
+				       		                          <option value="egy">Egypt</option>
+						                              <option value="sud">Sudan</option>
+						                              <option value="nam">Namibia</option>
+					        </optgroup>
+					 
+					 
+					        <optgroup label="Europe">
+						                              <option value="fra">France</option>
+						                              <option value="rus">Russia</option>
+						                              <option value="uk">UK</option>
+					        </optgroup>
+					     
+						   
+						   <optgroup label="North America" disabled="disabled">
+					                               	  <option value="can">Canada</option>
+					                               	  <option value="mex">Mexico</option>
+						                              <option value="usa">USA</option>
+					       </optgroup>
+				        </select>
+					</td>
+			</tr>
+					
+			
+			<tr>
+				    <td colspan="2">
+					      <input  type="checkbox" 
+                                 id="RememberMe" 
+                                 name="RememberMe" 
+                                 tabindex="2" 
+                                 accesskey="m"/>
+                                 <span for="RememberMe">RememberMe</span>
+					</td>
+					
+					
+			</tr>
+			
+			
+			</tr>
+                    <td  colspan="2" class ="blogin"> 
+       					  <input  type="Submit" 
+                                 value="  Log In  "/>
+					</td>
+			</tr>
+				
+		
+			</table>
+        
+	        </fieldset>
+		</form>
+        <span class="newAccount"><a href="registration.html">Create New Account !</a></spanp>
+	</body>
+
+</html> 
